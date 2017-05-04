@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PublicationOfMaterialOfAnalitic"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="78.556">
+  <properties />
+  
+  
+            <testcase name="authorizationAnaliticTest" time="17.687" classname="regressionSuit.fpspm131_PublicationOfMaterialOfAnalitic" />
+                <testcase name="verifyOfDeletionNewCreatedRubric" time="0.915" classname="regressionSuit.fpspm131_PublicationOfMaterialOfAnalitic" />
+                <testcase name="creationOfNewPublicationTest" time="50.875" classname="regressionSuit.fpspm131_PublicationOfMaterialOfAnalitic" />
+                <testcase name="verifyNewCreatedRubric" time="9.079" classname="regressionSuit.fpspm131_PublicationOfMaterialOfAnalitic" />
+      
+</testsuite>

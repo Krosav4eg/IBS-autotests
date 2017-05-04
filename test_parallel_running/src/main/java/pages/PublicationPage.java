@@ -150,6 +150,9 @@ public class PublicationPage extends BasePage {
     @FindBy(xpath = SAVE_PUBLICATION_BUTTON)
     private WebElement savePublicationButton;
 
+    @FindBy(xpath = VOLGO_VIATSKA_MI_DISPLAYED_IN_TABLE)
+    private WebElement getPublishPage;
+
 
     public void publicationPageISDisplayed() throws InterruptedException {
         Thread.sleep(2000);
@@ -184,7 +187,7 @@ public class PublicationPage extends BasePage {
         assertTrue(serviceInfoTab.getText().contains("Служебная информация"));
     }
 
-    public void creationNewPublication() throws InterruptedException, AWTException {
+    public void creationNewPublicationForContentOperator() throws InterruptedException, AWTException {
         //fill name of material level
         elementVisibility(nameOfMaterialInputField, driver).sendKeys("Autotest");
 
@@ -194,7 +197,7 @@ public class PublicationPage extends BasePage {
         //fill name of material date
         elementVisibility(dateOfSignature, driver).sendKeys("03.05.2017");
 
-        //select rubric level
+        //select rubric level for content operator
         elementVisibility(selectOrgObjects, driver).click();
         Thread.sleep(1000);
         elementVisibility(exchangeOfMaterialsInBankOfRussia, driver).click();
@@ -273,6 +276,147 @@ public class PublicationPage extends BasePage {
         robo.keyRelease(KeyEvent.VK_ENTER);
         Thread.sleep(2000);
 
+        //uploaded file is visible
+        elementVisibility(thirdUploadedFileIsDisplaed, driver);
+
+
+        //upload file#4
+        elementVisibility(attachedFielsDownloafButton, driver).click();
+        Thread.sleep(5000);
+
+        StringSelection stringSelection = new StringSelection("C:\\Users\\Avic\\Desktop\\для загрузки файлов в ceлениум\\New Text Document.txt");
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
+
+        Robot rob = new Robot();
+        rob.keyPress(KeyEvent.VK_ENTER);
+        rob.keyRelease(KeyEvent.VK_ENTER);
+        rob.keyPress(KeyEvent.VK_CONTROL);
+        rob.keyPress(KeyEvent.VK_V);
+        rob.keyRelease(KeyEvent.VK_V);
+        rob.keyRelease(KeyEvent.VK_CONTROL);
+        rob.keyPress(KeyEvent.VK_ENTER);
+        rob.keyRelease(KeyEvent.VK_ENTER);
+        Thread.sleep(2000);
+
+        //uploaded file is visible
+        elementVisibility(fourthUploadedFileIsDisplaed, driver);
+
+
+        //upload file#5
+        elementVisibility(attachedFielsDownloafButton, driver).click();
+        Thread.sleep(5000);
+
+        StringSelection stringSel = new StringSelection("C:\\Users\\Avic\\Desktop\\для загрузки файлов в ceлениум\\New Text Document (2).txt");
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSel, null);
+
+        Robot ro = new Robot();
+        ro.keyPress(KeyEvent.VK_ENTER);
+        ro.keyRelease(KeyEvent.VK_ENTER);
+        ro.keyPress(KeyEvent.VK_CONTROL);
+        ro.keyPress(KeyEvent.VK_V);
+        ro.keyRelease(KeyEvent.VK_V);
+        ro.keyRelease(KeyEvent.VK_CONTROL);
+        ro.keyPress(KeyEvent.VK_ENTER);
+        ro.keyRelease(KeyEvent.VK_ENTER);
+        Thread.sleep(2000);
+
+        //uploaded file is visible
+        elementVisibility(fifthUploadedFileIsDisplaed, driver);
+
+        //select theme rubric button
+        elementVisibility(selectThemeRzubricatorButton, driver).click();
+        elementVisibility(selectRubricatorPlusButton, driver).click();
+        elementVisibility(selectRubricatorDisplayed, driver).click();
+        elementVisibility(selectRubricatorSave, driver).click();
+        elementVisibility(selectRubricatorDispalyed, driver);
+        elementVisibility(savePublicationButton, driver).click();
+        Thread.sleep(2000);
+    }
+
+    public void creationNewPublicationForAnalitic() throws InterruptedException, AWTException {
+        //fill name of material level
+        elementVisibility(nameOfMaterialInputField, driver).sendKeys("Autotest");
+
+        //fill name of material author
+        elementVisibility(authorInputField, driver).sendKeys("Sergey");
+
+        //fill name of material date
+        elementVisibility(dateOfSignature, driver).sendKeys("03.05.2017");
+
+        //select rubric level for content operator
+        elementVisibility(selectOrgObjects, driver).click();
+        Thread.sleep(1000);
+        elementVisibility(tuBankOfRussiaTab, driver).click();
+        elementVisibility(volgoViatskaMi, driver).click();
+        Thread.sleep(1000);
+        elementVisibility(miDispalyedInTable, driver);
+        elementVisibility(brDisplayedVheckboxInTable, driver);
+        Thread.sleep(1000);
+        elementVisibility(saveOrgTemplateButton, driver).click();
+        Thread.sleep(1000);
+
+        //fill description of material level
+        elementVisibility(descriptionOfMaterialInputField, driver).sendKeys("Test material");
+
+        //upload file#1
+        elementVisibility(attachedFielsDownloafButton, driver).click();
+        Thread.sleep(5000);
+
+        StringSelection ss = new StringSelection("C:\\Users\\Avic\\Desktop\\для загрузки файлов в ceлениум\\2017.png");
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
+
+        Robot robot = new Robot();
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        robot.keyPress(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_V);
+        robot.keyRelease(KeyEvent.VK_CONTROL);
+        robot.keyPress(KeyEvent.VK_ENTER);
+        robot.keyRelease(KeyEvent.VK_ENTER);
+        Thread.sleep(2000);
+        // uploaded file is visible
+        elementVisibility(firstuploadedFileIsDisplaed, driver);
+
+        //upload file#2
+        elementVisibility(attachedFielsDownloafButton, driver).click();
+        Thread.sleep(5000);
+
+        StringSelection s = new StringSelection("C:\\Users\\Avic\\Desktop\\для загрузки файлов в ceлениум\\Flow Git.docx");
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s, null);
+
+        Robot r = new Robot();
+        r.keyPress(KeyEvent.VK_ENTER);
+        r.keyRelease(KeyEvent.VK_ENTER);
+        r.keyPress(KeyEvent.VK_CONTROL);
+        r.keyPress(KeyEvent.VK_V);
+        r.keyRelease(KeyEvent.VK_V);
+        r.keyRelease(KeyEvent.VK_CONTROL);
+        r.keyPress(KeyEvent.VK_ENTER);
+        r.keyRelease(KeyEvent.VK_ENTER);
+        Thread.sleep(2000);
+
+        //uploaded file is visible
+        elementVisibility(secondUploadedFileIsDisplaed, driver);
+
+
+        //upload file#3
+        elementVisibility(attachedFielsDownloafButton, driver).click();
+        Thread.sleep(5000);
+
+        StringSelection str = new StringSelection("C:\\Users\\Avic\\Desktop\\для загрузки файлов в ceлениум\\Framework_Documentation.pdf");
+        Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
+
+        Robot robo = new Robot();
+        robo.keyPress(KeyEvent.VK_ENTER);
+        robo.keyRelease(KeyEvent.VK_ENTER);
+        robo.keyPress(KeyEvent.VK_CONTROL);
+        robo.keyPress(KeyEvent.VK_V);
+        robo.keyRelease(KeyEvent.VK_V);
+        robo.keyRelease(KeyEvent.VK_CONTROL);
+        robo.keyPress(KeyEvent.VK_ENTER);
+        robo.keyRelease(KeyEvent.VK_ENTER);
+        Thread.sleep(2000);
         //uploaded file is visible
         elementVisibility(thirdUploadedFileIsDisplaed, driver);
 

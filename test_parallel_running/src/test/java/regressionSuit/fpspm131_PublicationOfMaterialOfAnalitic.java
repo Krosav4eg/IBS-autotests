@@ -9,28 +9,29 @@ import pages.PublicationPage;
 import java.awt.*;
 
 /**
- * Created by Avic on 5/3/2017.
+ * Created by Avic on 5/4/2017.
  */
-public class fpspm131_PublicationOfMaterialOfContentOerator extends BaseTest {
+public class fpspm131_PublicationOfMaterialOfAnalitic extends BaseTest {
+
     @Test
-    public void authorizationOperatorTest() throws InterruptedException {
+    public void authorizationAnaliticTest() throws InterruptedException {
         LoginPage loginPage = new LoginPage(driver);
-        loginPage.authorization("dbn_content_operator", "2wsx2WSX");
-        loginPage.checkContentOperatorRoleName();
+        loginPage.authorization("dbn_analyst_ca","2wsx2WSX");
+        loginPage.checkAnaliticRoleName();
     }
 
     @Test
     public void creationOfNewPublicationTest() throws InterruptedException, AWTException {
         PublicationPage publicationPage = new PublicationPage(driver);
         publicationPage.publicationPageISDisplayed();
-        publicationPage.creationNewPublication();
+        publicationPage.creationNewPublicationForAnalitic();
     }
 
     @Test
     public void verifyNewCreatedRubric() throws InterruptedException, AWTException {
         MainPage mainPage = new MainPage(driver);
         mainPage.mainPageIsDisplayed();
-        mainPage.assertionOFCreatedPublication();
+        mainPage.assertionOFCreatedPublicationForAnalitic();
     }
 
     @Test
@@ -38,4 +39,13 @@ public class fpspm131_PublicationOfMaterialOfContentOerator extends BaseTest {
         MainPage mainPage = new MainPage(driver);
         mainPage.deleteNewCreatedPublication();
     }
+
+
+
+
+
+
+
+
+
 }

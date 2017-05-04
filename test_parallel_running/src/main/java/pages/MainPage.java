@@ -55,8 +55,14 @@ public class MainPage extends BasePage {
     @FindBy(xpath = PUBLISED_PERSON_NEWCREATED_RUBRIC)
     private WebElement publishedNewCreatedRUBRIC;
 
+    @FindBy(xpath = PUBLISED_PERSON_NEWCREATED_RUBRIC_FOR_ANALITIC)
+    private WebElement publishedNewCreatedRUBRICForAnalitic;
+
     @FindBy(xpath = BR)
     private WebElement br;
+
+    @FindBy(xpath = MI)
+    private WebElement mi;
 
     @FindBy(xpath = RUBRICS)
     private WebElement rubrics;
@@ -86,7 +92,7 @@ public class MainPage extends BasePage {
         elementVisibility(testDataRightSection, driver);
     }
 
-    public void assertionOFCreatedPublication() {
+    public void assertionOFCreatedPublicationForContentOperator() {
         elementVisibility(createdRubricAssertion, driver);
         elementVisibility(dateOfSignatureNewCreatedRubric, driver);
         elementVisibility(publishedNewCreatedRubric, driver);
@@ -96,7 +102,18 @@ public class MainPage extends BasePage {
         elementVisibility(rubrics, driver);
         elementVisibility(templateButton, driver);
         elementVisibility(editButto, driver);
-       // elementVisibility(deleteButton, driver);
+    }
+
+    public void assertionOFCreatedPublicationForAnalitic() {
+        elementVisibility(createdRubricAssertion, driver);
+        elementVisibility(dateOfSignatureNewCreatedRubric, driver);
+        elementVisibility(publishedNewCreatedRubric, driver);
+        elementVisibility(publishedNewCreatedAuthor, driver);
+        elementVisibility(publishedNewCreatedRUBRICForAnalitic, driver);
+        elementVisibility(mi, driver);
+        elementVisibility(rubrics, driver);
+        elementVisibility(templateButton, driver);
+        elementVisibility(editButto, driver);
     }
 
     public void deleteNewCreatedPublication() {

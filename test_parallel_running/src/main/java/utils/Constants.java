@@ -25,7 +25,9 @@ public class Constants {
     public static final String PUBLISED_NEWCREATED_RUBRIC = "(//div[contains(text(),'03.05.2017')])[2]";
     public static final String PUBLISED_NEWCREATED_AUTHOR = "//div[contains(text(),'Sergey')]";
     public static final String PUBLISED_PERSON_NEWCREATED_RUBRIC = "//div[contains(text(),'ДБН dbn_content_operator')]";
+    public static final String PUBLISED_PERSON_NEWCREATED_RUBRIC_FOR_ANALITIC = "//div[contains(text(),'ДБН dbn_analyst_ca')]";
     public static final String BR = "//div[contains(text(),'Материалы для ГУП')]";
+    public static final String MI = "//div[contains(text(),'Волго-Вятская МИ')]";
     public static final String RUBRICS = "//div[contains(text(),'Рубрика')]";
     public static final String TEMPLATE_BUTTON = "//i[@class='fa fa-clipboard fa-lg']";
     public static final String EDIT_BUTTON = "//i[@class='fa fa-pencil-square-o fa-lg']";
@@ -54,6 +56,7 @@ public class Constants {
     public static final String TU_BANK_OF_RUSSIA_TAB = "//a[contains(text(),'ТУ Банка России')]";
     public static final String VOLGO_VIATSKA_MI = "(//tr/td[3]/button[@class='fpspm-button'])[1]";
     public static final String MI_DISPLAYED_IN_TABLE = "//tr/td[3][contains(text(),'Волго-Вятская МИ')]";
+    public static final String VOLGO_VIATSKA_MI_DISPLAYED_IN_TABLE = "//tr/td[2][contains(text(),'Волго-Вятская МИ')]";
     //========================
     public static final String MI_DISPLAYED_CHECKBOX_IN_TABLE = "//tr/td[2][contains(text(),'Материалы для ГУП')]";
     //========================
@@ -77,7 +80,7 @@ public class Constants {
     //========================
     public static final String THEME_RUBRICATOR_TAB = "(//fieldset[@class='fpspm-fieldset']/legend)[6]";
     public static final String SELECT_THEME_RUBRICATOR_BUTTON = "//button[@data-field='chooseRubricBtn']";
-    public static final String SELECT_RUBRICATOR_PLUS_BUTTON = "//tr/td[2]/div/button";
+    public static final String SELECT_RUBRICATOR_PLUS_BUTTON = "//button[@data-action='selectRubricNode']";
     public static final String SELECT_RUBRICATOR_DISPLAYED = "//tr/td[2][contains(text(),'Рубрика')]";
     public static final String SELECT_RUBRICATOR_SAVE = "(//button/span[contains(text(),'Сохранить')])[5]";
     public static final String SELECTED_RUBRICATOR_DISPLAYED = "//div/p[contains(text(),'Рубрика')]";

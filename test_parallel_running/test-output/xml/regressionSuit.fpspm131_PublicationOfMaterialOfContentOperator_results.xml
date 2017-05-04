@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="PublicationOfMaterialOfContentOperator"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="80.976">
+  <properties />
+  
+  
+            <testcase name="authorizationOperatorTest" time="21.762" classname="regressionSuit.fpspm131_PublicationOfMaterialOfContentOperator" />
+                <testcase name="verifyNewCreatedRubric" time="8.757" classname="regressionSuit.fpspm131_PublicationOfMaterialOfContentOperator" />
+                <testcase name="verifyOfDeletionNewCreatedRubric" time="0.883" classname="regressionSuit.fpspm131_PublicationOfMaterialOfContentOperator" />
+                <testcase name="creationOfNewPublicationTest" time="49.574" classname="regressionSuit.fpspm131_PublicationOfMaterialOfContentOperator" />
+      
+</testsuite>

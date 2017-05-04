@@ -1,62 +1,79 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
-<suite name="regressionSuit" parallel="tests" thread-count="4">
+<suite name="regressionSuit" parallel="tests" thread-count="3">
     <listeners>
         <listener class-name="org.uncommons.reportng.HTMLReporter"/>
         <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
     </listeners>
 
 
-    <test name="OperatorContentTest" >
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="regressionSuit.fpspm130_OperatorContentTest"/>
-        </classes>
-    </test>
-    <test name="CordinatorTest">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="regressionSuit.fpspm130_CordinatorTest"/>
-        </classes>
-    </test>
-    <test name="AnaliticTest">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="regressionSuit.fpspm130_AnaliticTest"/>
-        </classes>
-    </test>
+    <!--<test name="OperatorContentTest" >-->
+    <!--<parameter name="browser" value="chrome"/>-->
+    <!--<classes>-->
+    <!--<class name="regressionSuit.fpspm130_OperatorContentTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="CordinatorTest">-->
+    <!--<parameter name="browser" value="chrome"/>-->
+    <!--<classes>-->
+    <!--<class name="regressionSuit.fpspm130_CordinatorTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
+    <!--<test name="AnaliticTest">-->
+    <!--<parameter name="browser" value="chrome"/>-->
+    <!--<classes>-->
+    <!--<class name="regressionSuit.fpspm130_AnaliticTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
 
     <!--workWithRubricatorTestSuit-->
 
-    <test name="WorkWithRubricatorTest">
-        <parameter name="browser" value="chrome"/>
-        <classes>
-            <class name="regressionSuit.fpspm140_WorkWithRubricatorTest"/>
-        </classes>
-    </test>
+    <!--<test name="WorkWithRubricatorTest">-->
+    <!--<parameter name="browser" value="chrome"/>-->
+    <!--<classes>-->
+    <!--<class name="regressionSuit.fpspm140_WorkWithRubricatorTest"/>-->
+    <!--</classes>-->
+    <!--</test>-->
 
     <!--AssignAccessRightsManuallyByTheCoordinatorTestSuit-->
 
     <!--<test name="FiltrationByUnitsTest">-->
-        <!--<parameter name="browser" value="chrome"/>-->
-        <!--<classes>-->
-            <!--<class name="regressionSuit.fpspm141_FiltrationByUnitsTest"/>-->
-        <!--</classes>-->
+    <!--<parameter name="browser" value="chrome"/>-->
+    <!--<classes>-->
+    <!--<class name="regressionSuit.fpspm141_FiltrationByUnitsTest"/>-->
+    <!--</classes>-->
     <!--</test>-->
 
     <!--<test name="SearchingByParametersTest">-->
-        <!--<parameter name="browser" value="chrome"/>-->
-        <!--<classes>-->
-            <!--<class name="regressionSuit.fpspm141_SearchingByParametersTest"/>-->
-        <!--</classes>-->
+    <!--<parameter name="browser" value="chrome"/>-->
+    <!--<classes>-->
+    <!--<class name="regressionSuit.fpspm141_SearchingByParametersTest"/>-->
+    <!--</classes>-->
     <!--</test>-->
 
     <!--<test name="RoleConfirmationTest">-->
-        <!--<parameter name="browser" value="chrome"/>-->
-        <!--<classes>-->
-            <!--<class name="regressionSuit.fpspm141_RoleConfirmationTest"/>-->
-        <!--</classes>-->
+    <!--<parameter name="browser" value="chrome"/>-->
+    <!--<classes>-->
+    <!--<class name="regressionSuit.fpspm141_RoleConfirmationTest"/>-->
+    <!--</classes>-->
     <!--</test>-->
+
+
+    <!--Publication Of Material-->
+
+    <test name="PublicationOfMaterialOfContentOperator">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="regressionSuit.fpspm131_PublicationOfMaterialOfContentOperator"/>
+        </classes>
+    </test>
+
+    <test name="PublicationOfMaterialOfAnalitic">
+        <parameter name="browser" value="chrome"/>
+        <classes>
+            <class name="regressionSuit.fpspm131_PublicationOfMaterialOfAnalitic"/>
+        </classes>
+    </test>
 
 
 </suite>
