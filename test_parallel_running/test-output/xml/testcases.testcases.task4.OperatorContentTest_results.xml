@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OperatorContentTest"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="37.694">
+  <properties />
+  
+  
+            <testcase name="reportPageTest" time="0.665" classname="OperatorContentTest" />
+                <testcase name="publishPageTest" time="5.306" classname="OperatorContentTest" />
+                <testcase name="themeRubricPageTest" time="2.406" classname="OperatorContentTest" />
+                <testcase name="authorizationTest" time="24.422" classname="OperatorContentTest" />
+                <testcase name="mainPageTest" time="4.895" classname="OperatorContentTest" />
+      
+</testsuite>

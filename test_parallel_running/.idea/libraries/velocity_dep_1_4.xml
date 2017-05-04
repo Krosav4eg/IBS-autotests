@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="velocity-dep-1.4">
+    <CLASSES>
+      <root url="jar://E:/velocity-dep-1.4.jar!/" />
+      <root url="jar://$USER_HOME$/Downloads/guice-3.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

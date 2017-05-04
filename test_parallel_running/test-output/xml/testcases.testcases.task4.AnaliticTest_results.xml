@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="AnaliticTest"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="34.087">
+  <properties />
+  
+  
+            <testcase name="publishPageTest" time="3.894" classname="AnaliticTest" />
+                <testcase name="mainPageTest" time="4.830" classname="AnaliticTest" />
+                <testcase name="authorizationCordinatorTest" time="24.033" classname="AnaliticTest" />
+                <testcase name="myRightsPageTest" time="1.330" classname="AnaliticTest" />
+      
+</testsuite>

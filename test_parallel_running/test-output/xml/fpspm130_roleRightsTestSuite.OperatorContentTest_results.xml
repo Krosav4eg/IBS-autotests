@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="OperatorContentTest"
+           tests="5"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="72.928">
+  <properties />
+  
+  
+            <testcase name="authorizationOperatorTest" time="33.687" classname="regressionSuit.fpspm130_OperatorContentTest" />
+                <testcase name="mainPageTest" time="21.614" classname="regressionSuit.fpspm130_OperatorContentTest" />
+                <testcase name="publishPageTest" time="10.328" classname="regressionSuit.fpspm130_OperatorContentTest" />
+                <testcase name="reportPageTest" time="2.539" classname="regressionSuit.fpspm130_OperatorContentTest" />
+                <testcase name="themeRubricPageTest" time="4.760" classname="regressionSuit.fpspm130_OperatorContentTest" />
+      
+</testsuite>

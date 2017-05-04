@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CordinatorTest"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="19.360">
+  <properties />
+  
+  
+            <testcase name="authorizationCordinatorTest" time="13.871" classname="CordinatorTest" />
+                <testcase name="reportPageTest" time="0.942" classname="CordinatorTest" />
+                <testcase name="userTemplatePageTest" time="0.770" classname="CordinatorTest" />
+                <testcase name="manageOfAccessPageTest" time="3.777" classname="CordinatorTest" />
+      
+</testsuite>

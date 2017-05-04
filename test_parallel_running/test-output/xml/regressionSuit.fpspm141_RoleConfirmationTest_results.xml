@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="RoleConfirmationTest"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="142.099">
+  <properties />
+  
+  
+            <testcase name="manageOfAccessApprovalPageTest" time="117.978" classname="regressionSuit.fpspm141_RoleConfirmationTest" />
+                <testcase name="authorizationCoordinatorTest" time="24.121" classname="regressionSuit.fpspm141_RoleConfirmationTest" />
+      
+</testsuite>

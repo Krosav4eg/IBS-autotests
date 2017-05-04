@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="WorkWithRubricatorTest"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="34.136">
+  <properties />
+  
+  
+            <testcase name="authorizationOperatorContentTest" time="19.940" classname="WorkWithRubricatorTest" />
+                <testcase name="deleteNewRubricTest" time="0.664" classname="WorkWithRubricatorTest" />
+                <testcase name="createNewThemeRubricTest" time="13.460" classname="WorkWithRubricatorTest" />
+                <testcase name="newRubricWasSuccessfullyDeletedTest" time="0.072" classname="WorkWithRubricatorTest" />
+      
+</testsuite>

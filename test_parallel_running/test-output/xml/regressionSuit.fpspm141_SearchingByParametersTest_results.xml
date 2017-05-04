@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="SearchingByParametersTest"
+           tests="2"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="89.135">
+  <properties />
+  
+  
+            <testcase name="authorizationCoordinatorTest" time="47.892" classname="regressionSuit.fpspm141_SearchingByParametersTest" />
+                <testcase name="searchByFiltrationOnManageOfAccessPageTest" time="41.243" classname="regressionSuit.fpspm141_SearchingByParametersTest" />
+      
+</testsuite>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="CordinatorTest"
+           tests="4"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="60.546">
+  <properties />
+  
+  
+            <testcase name="reportPageTest" time="7.964" classname="regressionSuit.fpspm130_CordinatorTest" />
+                <testcase name="authorizationCordinatorTest" time="36.912" classname="regressionSuit.fpspm130_CordinatorTest" />
+                <testcase name="manageOfAccessPageTest" time="13.072" classname="regressionSuit.fpspm130_CordinatorTest" />
+                <testcase name="userTemplatePageTest" time="2.598" classname="regressionSuit.fpspm130_CordinatorTest" />
+      
+</testsuite>

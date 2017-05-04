@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="FiltrationByUnitsTest"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="62.412">
+  <properties />
+  
+  
+            <testcase name="verifyingDepartmentTest" time="20.858" classname="regressionSuit.fpspm141_FiltrationByUnitsTest" />
+                <testcase name="authorizationCordinatorTest" time="29.242" classname="regressionSuit.fpspm141_FiltrationByUnitsTest" />
+                <testcase name="verifyingRoleTest" time="12.312" classname="regressionSuit.fpspm141_FiltrationByUnitsTest" />
+      
+</testsuite>
