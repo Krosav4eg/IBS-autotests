@@ -7,6 +7,7 @@ import pages.MainPage;
 import pages.PublicationPage;
 
 import java.awt.*;
+import java.io.IOException;
 
 /**
  * Created by Avic on 5/4/2017.
@@ -21,9 +22,10 @@ public class fpspm131_PublicationOfMaterialOfAnalitic extends BaseTest {
     }
 
     @Test
-    public void creationOfNewPublicationTest() throws InterruptedException, AWTException {
+    public void creationOfNewPublicationTest() throws InterruptedException, AWTException, IOException {
         PublicationPage publicationPage = new PublicationPage(driver);
         publicationPage.publicationPageISDisplayed();
+        publicationPage.checkRequiresFields();
         publicationPage.creationNewPublicationForAnalitic();
     }
 

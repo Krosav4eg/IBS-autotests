@@ -80,11 +80,11 @@ public class Constants {
     //========================
     public static final String THEME_RUBRICATOR_TAB = "(//fieldset[@class='fpspm-fieldset']/legend)[6]";
     public static final String SELECT_THEME_RUBRICATOR_BUTTON = "//button[@data-field='chooseRubricBtn']";
-    public static final String SELECT_RUBRICATOR_PLUS_BUTTON = "//button[@data-action='selectRubricNode']";
+    public static final String SELECT_RUBRICATOR_PLUS_BUTTON = "//tbody[@class='ui-treetable-data']//div[@class='fpspm-text-center']/button[@data-action='selectRubricNode']";
     public static final String SELECT_RUBRICATOR_DISPLAYED = "//tr/td[2][contains(text(),'Рубрика')]";
     public static final String SELECT_RUBRICATOR_SAVE = "(//button/span[contains(text(),'Сохранить')])[5]";
     public static final String SELECTED_RUBRICATOR_DISPLAYED = "//div/p[contains(text(),'Рубрика')]";
-    public static final String TRASH_HOLDER_OF_SELECTED_RUBRICATOR_DISPLAYED = "(//button[@title='Удалить'])[2]";
+    public static final String TRASH_HOLDER_OF_SELECTED_RUBRICATOR_DISPLAYED = "//button[@data-action='removeSelectedRubrics']";
     //========================
     public static final String RELATED_MATERIALS_TAB = "(//fieldset[@class='fpspm-fieldset']/legend)[7]";
     public static final String RELATED_MATERIALS_TAB_INPUTFIELD = "//input[@name='materialId']";
@@ -93,6 +93,16 @@ public class Constants {
     public static final String SERVICE_INFO_TAB = "(//fieldset[@class='fpspm-fieldset']/legend)[8]";
     //========================
     public static final String SAVE_PUBLICATION_BUTTON = "//button[1]/span[contains(text(),'Сохранить')]";
+
+    //========================Requires Fields
+    public static final String REQUIRE_FIELD_1 = "(//label[contains(text(),'Это поле необходимо заполнить.')])[1]";
+    public static final String REQUIRE_FIELD_2 = "(//label[contains(text(),'Это поле необходимо заполнить.')])[2]";
+    public static final String REQUIRE_FIELD_3 = "(//label[contains(text(),'Это поле необходимо заполнить.')])[3]";
+
+    //========================Error prompts for fields
+    public static final String ORG_OBJECT_PROMPT = "//ul[@class='fpspm-form-errors']/li[contains(text(),'Необходимо выбрать организационный объект')]";
+    public static final String ATTACH_FIELS_PROMPT = "//ul[@class='fpspm-form-errors']/li[contains(text(),'Необходимо прикрепить файлы')]";
+    public static final String NEED_TO_SELECT_THEME_RUBRIC_PROMPT = "//ul[@class='fpspm-form-errors']/li[contains(text(),'Необходимо выбрать тематическую рубрику')]";
 
 
     //========================THEME RUBRIC PAGE=============================================

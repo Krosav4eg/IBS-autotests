@@ -16,10 +16,11 @@ public class MyRightsPage extends BasePage {
         super(driver);
     }
 
+    //==========================MY RIGHTS TAB
     @FindBy(xpath = MY_RIGHTS_PAGE)
     private WebElement myRightsPage;
 
-
+    //===========================
     public void myRightsPageIsDisplayed() throws InterruptedException {
         //logger.info("MyRights Page Is Displayed");
         Thread.sleep(5000);

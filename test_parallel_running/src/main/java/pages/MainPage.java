@@ -38,7 +38,7 @@ public class MainPage extends BasePage {
     @FindBy(xpath = TEST_DATA_RIGHT_SECTION)
     protected WebElement testDataRightSection;
 
-    //--------------------------------------------------------------------------------------------
+    //-------------------------------------CREATED_RUBRIC_ASSERTION-------------------------------
 
     @FindBy(xpath = CREATED_RUBRIC_ASSERTION)
     private WebElement createdRubricAssertion;
@@ -79,6 +79,7 @@ public class MainPage extends BasePage {
     @FindBy(xpath = DELETE_NEW_RUBRIC_BUTTON)
     private WebElement deleteNewRubricButton;
 
+    //--------------------------------------MY METHODS--------------------------------------------------
 
     public void mainPageIsDisplayed() throws InterruptedException {
         Thread.sleep(5000);

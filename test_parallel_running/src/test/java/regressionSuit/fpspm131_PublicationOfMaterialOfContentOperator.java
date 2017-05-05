@@ -23,9 +23,9 @@ public class fpspm131_PublicationOfMaterialOfContentOperator extends BaseTest {
     public void creationOfNewPublicationTest() throws InterruptedException, AWTException {
         PublicationPage publicationPage = new PublicationPage(driver);
         publicationPage.publicationPageISDisplayed();
+        publicationPage.checkRequiresFields();
         publicationPage.creationNewPublicationForContentOperator();
     }
-
     @Test
     public void verifyNewCreatedRubric() throws InterruptedException, AWTException {
         MainPage mainPage = new MainPage(driver);

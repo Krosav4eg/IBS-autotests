@@ -15,6 +15,7 @@ public class ReportsPage extends BasePage {
         super(driver);
     }
 
+    //======================REPORT PAGE TAB
     @FindBy(xpath = REPORTS_PAGE)
     private WebElement reportPage;
 

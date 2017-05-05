@@ -12,6 +12,7 @@ import static utils.Constants.USERS_TEMPLATES_PAGE;
  */
 public class UserTemplatePage extends BasePage {
 
+    //===============================USER TEMPLATE PAGE
     @FindBy(xpath = USERS_TEMPLATES_PAGE)
     private WebElement userTemplatePage;
 
@@ -20,7 +21,7 @@ public class UserTemplatePage extends BasePage {
     }
 
     public void userTemplatePageIsDisplayed() {
-       // logger.info("User Template Page Is Displayed");
+        // logger.info("User Template Page Is Displayed");
         elementVisibility(userTemplatePage, driver).click();
     }
 

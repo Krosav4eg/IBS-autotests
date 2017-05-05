@@ -17,17 +17,17 @@ public class ManagementOfAccessRightsPage extends BasePage {
         super(driver);
     }
 
+    //==================================FPS PM TAB
     @FindBy(xpath = FPS_PM_TAB)
     private WebElement fpsPmTab;
 
+    //================================MANAGE OF ACCESS PAGE
     @FindBy(xpath = MANAGEMENT_OF_ACCESS_RIGHTS)
     private WebElement managemetOfAccessRights;
 
+    //================================SEARCH PARAMETERS SECTION
     @FindBy(xpath = SEARCH_PARAMETERS_SECTION)
     private WebElement searchParametersSection;
-
-    @FindBy(xpath = RESULTS_OF_SEARCH_TABLE)
-    private WebElement resultsOfSearchTable;
 
     @FindBy(xpath = INPUT_LAST_NAME_FIST_NAME_FIELD)
     private WebElement inputLastNameField;
@@ -35,108 +35,9 @@ public class ManagementOfAccessRightsPage extends BasePage {
     @FindBy(xpath = INPUT_LOGIN_FIELD)
     private WebElement inputLoginField;
 
-    @FindBy(xpath = USER_FIRST_NAME_LAST_NAME_IN_TABLE)
-    private WebElement firstNameLastNameInTable;
-
-    @FindBy(xpath = USER_LOGIN_IN_IN_TABLE)
-    private WebElement userLoginInTable;
-
-    @FindBy(xpath = DISPLAY_ONLY_CA_CHECKBOX)
-    private WebElement displayOnlyCaCheckBox;
-
-    @FindBy(xpath = FOUNTED_USER_1_IN_TABLE)
-    private WebElement displayfoundedUser1;
-
-    @FindBy(xpath = FOUNTED_USER_2_IN_TABLE)
-    private WebElement displayfoundedUser2;
-
-    @FindBy(xpath = FOUNTED_USER_3_IN_TABLE)
-    private WebElement displayfoundedUser3;
-
-    @FindBy(xpath = FOUNTED_USER_4_IN_TABLE)
-    private WebElement displayfoundedUser4;
-
-    @FindBy(xpath = UNCONFIRMED_ROLE_IN_TABLE)
-    private WebElement unconfirmedRole;
-
-    @FindBy(xpath = CONFIRMATION_ROLE_FOR_USER_DIALOG_WINDOW)
-    private WebElement confirmedRoleForUser;
-
-    @FindBy(xpath = CONFIRMATION_ROLE_FOR_USER_DIALOG_WINDOW_CHECKBOX)
-    private WebElement confirmedRoleForUserCheckBox;
-
-    @FindBy(xpath = CONFIRMATION_ROLE_FOR_USER_DIALOG_WINDOW_SAVE_BUTTON)
-    private WebElement confirmedRoleForUserSaveButton;
-
-    @FindBy(xpath = CONFIRMED_ROLE_IN_TABLE)
-    private WebElement confirmedRole;
-
-    @FindBy(xpath = RUBRIC_ICON)
-    private WebElement rubricIcon;
-
-    @FindBy(xpath = SELECT_RUBRIC_WINDOW)
-    private WebElement selectRubricWindow;
-
-    @FindBy(xpath = SELECT_RUBRIC)
-    private WebElement selectRubric;
-
-    @FindBy(xpath = SELECT_RUBRIC_IS_DISPLAYED)
-    private WebElement selectedRubricIsDispalayed;
-
-    @FindBy(xpath = SELECTED_RUBRIC_CHECKBOX1)
-    private WebElement selectedRubricCheckbox1;
-
-    @FindBy(xpath = DELETE_SELECTED_RUBRIC_BUTTON)
-    private WebElement deleteSelectedRubricButton;
-
-    @FindBy(xpath = NO_RECORDS_FOUND_MESSAGE)
-    private WebElement noRecordsFoundMessage;
-
-    @FindBy(xpath = SAVE_RUBRIC_BUTTON)
-    private WebElement saveRubricButton;
-
-
-    //========================MANAGEMENT OF ACCESS RIGHTS ROLE DROPDOWN FILTERS=============================================
-
-    @FindBy(xpath = DROPDOWN_ROLE_BUTTON)
-    private WebElement dropDownRoleButton;
-
-    @FindBy(xpath = DROPDOWN_ALL_ROLE_BUTTON)
-    private WebElement dropDownAllRoleButton;
-
-    @FindBy(xpath = DROPDOWN_ROLE_CONTENT_OPERATOR_BUTTON)
-    private WebElement dropDownRoleContentButton;
-
-    @FindBy(xpath = DROPDOWN_ROLE_ANALITIC_BUTTON)
-    private WebElement dropDownRoleAnaliticButton;
-
-    //========================Founded USERS=============================================
-    @FindBy(xpath = "(//td[contains(text(),'dbn_content_operator')])[2]")
-    private WebElement contetntOperatorFoundedUser;
-
-    @FindBy(xpath = "(//td[contains(text(),'dbn_analyst_ca')])[2]")
-    private WebElement analiticFoundedUser1;
-
-    @FindBy(xpath = "(//td[contains(text(),'dbn_analyst_mi_2')])[2]")
-    private WebElement analiticFoundedUser2;
-
-    @FindBy(xpath = "(//td[contains(text(),'dbn_analyst_tu_29')])[2]")
-    private WebElement analiticFoundedUser3;
-
-    @FindBy(xpath = "(//td[contains(text(),'dbn_analyst_tu_29')])[2]")
-    private WebElement analiticFoundedUser4;
-
-    @FindBy(xpath = "(//td[contains(text(),'dbn_analyst_tu_45')])[2]")
-    private WebElement analiticFoundedUser5;
-
-    @FindBy(xpath = "(//td[contains(text(),'dbn_member_mi_2')])[2]")
-    private WebElement analiticFoundedUser6;
-
-    //========================MANAGEMENT OF ACCESS RIGHTS ROLE DROPDOWN FILTERS=============================================
-
+    //=======================DEPARTMENT DROPDOWN FILTERS=============================================
     @FindBy(css = DROPDOWN_DEPARTMENT_BUTTON)
     private WebElement dropDowndDepartmentButton;
-
 
     @FindBy(css = ALL_DEPARTMENTS_FILTER)
     private WebElement allDepartmentsFilter;
@@ -192,6 +93,122 @@ public class ManagementOfAccessRightsPage extends BasePage {
     @FindBy(xpath = UJNOE_GU_OF_BANK_RUSSIA)
     private WebElement ujnoeGuOfRussiaFilter;
 
+    //=======================ROLE DROPDOWN FILTERS=============================================
+
+    @FindBy(xpath = DROPDOWN_ROLE_BUTTON)
+    private WebElement dropDownRoleButton;
+
+    @FindBy(xpath = DROPDOWN_ALL_ROLE_BUTTON)
+    private WebElement dropDownAllRoleButton;
+
+    @FindBy(xpath = DROPDOWN_ROLE_CONTENT_OPERATOR_BUTTON)
+    private WebElement dropDownRoleContentButton;
+
+    @FindBy(xpath = DROPDOWN_ROLE_ANALITIC_BUTTON)
+    private WebElement dropDownRoleAnaliticButton;
+
+    //================================SEARCH ONLY CA CHECKBOX
+
+    @FindBy(xpath = DISPLAY_ONLY_CA_CHECKBOX)
+    private WebElement displayOnlyCaCheckBox;
+
+    //================================SEARCH RESULTS BY FIRST AND LAST NAME IN TABLE
+
+    @FindBy(xpath = RESULTS_OF_SEARCH_TABLE)
+    private WebElement resultsOfSearchTable;
+
+    @FindBy(xpath = USER_FIRST_NAME_LAST_NAME_IN_TABLE)
+    private WebElement firstNameLastNameInTable;
+
+    //================================SEARCH RESULTS BY LOGIN IN TABLE
+    @FindBy(xpath = USER_LOGIN_IN_IN_TABLE)
+    private WebElement userLoginInTable;
+
+    //================================SEARCH RESULTS BY ONLY CA IN TABLE
+
+    @FindBy(xpath = FOUNTED_USER_1_IN_TABLE)
+    private WebElement displayfoundedUser1;
+
+    @FindBy(xpath = FOUNTED_USER_2_IN_TABLE)
+    private WebElement displayfoundedUser2;
+
+    @FindBy(xpath = FOUNTED_USER_3_IN_TABLE)
+    private WebElement displayfoundedUser3;
+
+    @FindBy(xpath = FOUNTED_USER_4_IN_TABLE)
+    private WebElement displayfoundedUser4;
+
+
+    //================================UNCONFIRMED  ROLE  IN TABLE
+
+    @FindBy(xpath = UNCONFIRMED_ROLE_IN_TABLE)
+    private WebElement unconfirmedRole;
+
+    @FindBy(xpath = CONFIRMATION_ROLE_FOR_USER_DIALOG_WINDOW)
+    private WebElement confirmedRoleForUser;
+
+    @FindBy(xpath = CONFIRMATION_ROLE_FOR_USER_DIALOG_WINDOW_CHECKBOX)
+    private WebElement confirmedRoleForUserCheckBox;
+
+    @FindBy(xpath = CONFIRMATION_ROLE_FOR_USER_DIALOG_WINDOW_SAVE_BUTTON)
+    private WebElement confirmedRoleForUserSaveButton;
+
+    //================================CONFIRMED ROLE  IN TABLE
+
+    @FindBy(xpath = CONFIRMED_ROLE_IN_TABLE)
+    private WebElement confirmedRole;
+
+    //================================SELECTION OF RUBRIC IN TABLE
+
+    @FindBy(xpath = RUBRIC_ICON)
+    private WebElement rubricIcon;
+
+    @FindBy(xpath = SELECT_RUBRIC_WINDOW)
+    private WebElement selectRubricWindow;
+
+    @FindBy(xpath = SELECT_RUBRIC)
+    private WebElement selectRubric;
+
+    @FindBy(xpath = SELECT_RUBRIC_IS_DISPLAYED)
+    private WebElement selectedRubricIsDispalayed;
+
+    @FindBy(xpath = SELECTED_RUBRIC_CHECKBOX1)
+    private WebElement selectedRubricCheckbox1;
+
+    @FindBy(xpath = DELETE_SELECTED_RUBRIC_BUTTON)
+    private WebElement deleteSelectedRubricButton;
+
+    @FindBy(xpath = NO_RECORDS_FOUND_MESSAGE)
+    private WebElement noRecordsFoundMessage;
+
+    @FindBy(xpath = SAVE_RUBRIC_BUTTON)
+    private WebElement saveRubricButton;
+
+
+    //========================Founded USERS FOR ANALITIC SEARCH=============================================
+    @FindBy(xpath = "(//td[contains(text(),'dbn_content_operator')])[2]")
+    private WebElement contetntOperatorFoundedUser;
+
+    @FindBy(xpath = "(//td[contains(text(),'dbn_analyst_ca')])[2]")
+    private WebElement analiticFoundedUser1;
+
+    @FindBy(xpath = "(//td[contains(text(),'dbn_analyst_mi_2')])[2]")
+    private WebElement analiticFoundedUser2;
+
+    @FindBy(xpath = "(//td[contains(text(),'dbn_analyst_tu_29')])[2]")
+    private WebElement analiticFoundedUser3;
+
+    @FindBy(xpath = "(//td[contains(text(),'dbn_analyst_tu_29')])[2]")
+    private WebElement analiticFoundedUser4;
+
+    @FindBy(xpath = "(//td[contains(text(),'dbn_analyst_tu_45')])[2]")
+    private WebElement analiticFoundedUser5;
+
+    @FindBy(xpath = "(//td[contains(text(),'dbn_member_mi_2')])[2]")
+    private WebElement analiticFoundedUser6;
+
+
+    //==========================================================================================================
     public void managementOfAccessRightPageIsDisplayed() {
         //logger.info("Assertion that management Of Access Right Page Is Displayed");
         elementVisibility(fpsPmTab, driver).click();
@@ -280,7 +297,6 @@ public class ManagementOfAccessRightsPage extends BasePage {
 
     public void assertionRoleFilter() throws InterruptedException {
         //  logger.info("Assertion Role Filter");
-
         waitingCustomForElement();
         moveMouseAndClickOnVisibleElementByJS(driver, dropDownRoleButton);
         elementVisibility(dropDownRoleContentButton, driver).click();

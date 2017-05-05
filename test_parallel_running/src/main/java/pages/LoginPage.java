@@ -29,6 +29,8 @@ public class LoginPage extends BasePage {
     @FindBy(xpath = AUTHORIZATION_BUTTON)
     private WebElement authorizationButton;
 
+    //========================ROLE INDICATORS AFTER AUTHORIZATION
+
     @FindBy(xpath = CONTENT_OPERATOR_ROLE_INDICATOR)
     private WebElement contentOperatorRoleIndicator;
 

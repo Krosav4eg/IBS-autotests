@@ -16,9 +16,11 @@ public class ThemePublicationPage extends BasePage {
         super(driver);
     }
 
+    //================================THEME RUBRIC PAGE
     @FindBy(xpath = THEME_RUBRIC_PAGE)
     private WebElement themeRubricTab;
 
+    //================================THEME RUBRIC TABLE SECTION
     @FindBy(xpath = THEME_RUBRIC_TABLE)
     private WebElement themeRubricTable;
 
@@ -28,13 +30,15 @@ public class ThemePublicationPage extends BasePage {
     @FindBy(xpath = DESCRIPTION_COLUMN_OF_TABLE)
     private WebElement descriptionColumnTable;
 
+
+    //====================================
     public void themeRubricPageDisplayed() {
         //logger.info("Theme Rubric Page Displayed");
         elementVisibility(themeRubricTab, driver).click();
     }
 
     public void themeRubricTableIsVisible() {
-       // logger.info("Theme Rubric Table Is Visible");
+        // logger.info("Theme Rubric Table Is Visible");
         elementVisibility(themeRubricTable, driver);
         elementVisibility(nameColumnTable, driver);
         elementVisibility(descriptionColumnTable, driver);
