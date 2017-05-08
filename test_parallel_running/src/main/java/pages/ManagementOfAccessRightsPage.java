@@ -282,6 +282,7 @@ public class ManagementOfAccessRightsPage extends BasePage {
         elementVisibility(saveRubricButton, driver).click();
         waitingCustomForElement();
         elementVisibility(rubricIcon, driver).click();
+        waitingCustomForElement();
         elementVisibility(selectedRubricIsDispalayed, driver);
         waitingCustomForElement();
         elementVisibility(selectedRubricCheckbox1, driver).click();
@@ -290,9 +291,8 @@ public class ManagementOfAccessRightsPage extends BasePage {
         elementVisibility(saveRubricButton, driver).click();
         waitingCustomForElement();
         elementVisibility(rubricIcon, driver).click();
+        waitingCustomForElement();
         elementVisibility(noRecordsFoundMessage, driver);
-
-
     }
 
     public void assertionRoleFilter() throws InterruptedException {

@@ -151,7 +151,7 @@ public class PublicationPage extends BasePage {
     private WebElement trashHolderOFselectRubricatorDispalyed;
 
 
-   //===================================Related materials section
+    //===================================Related materials section
 
     @FindBy(xpath = RELATED_MATERIALS_TAB)
     private WebElement relatedMaterialsTab;
@@ -292,7 +292,7 @@ public class PublicationPage extends BasePage {
         elementVisibility(attachedFielsDownloafButton, driver).click();
         Thread.sleep(5000);
 
-        StringSelection ss = new StringSelection("C:\\Users\\Avic\\Desktop\\для загрузки файлов в ceлениум\\2017.png");
+        StringSelection ss = new StringSelection("C:\\TestNG\\test_parallel_running\\src\\main\\java\\utils\\docs_and_images\\1.png");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(ss, null);
 
         Robot robot = new Robot();
@@ -313,7 +313,7 @@ public class PublicationPage extends BasePage {
         elementVisibility(attachedFielsDownloafButton, driver).click();
         Thread.sleep(5000);
 
-        StringSelection s = new StringSelection("C:\\Users\\Avic\\Desktop\\для загрузки файлов в ceлениум\\Flow Git.docx");
+        StringSelection s = new StringSelection("C:\\TestNG\\test_parallel_running\\src\\main\\java\\utils\\docs_and_images\\Flow Git.docx");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s, null);
 
         Robot r = new Robot();
@@ -335,7 +335,7 @@ public class PublicationPage extends BasePage {
         elementVisibility(attachedFielsDownloafButton, driver).click();
         Thread.sleep(5000);
 
-        StringSelection str = new StringSelection("C:\\Users\\Avic\\Desktop\\для загрузки файлов в ceлениум\\Framework_Documentation.pdf");
+        StringSelection str = new StringSelection("C:\\TestNG\\test_parallel_running\\src\\main\\java\\utils\\docs_and_images\\Framework_Documentation.pdf");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(str, null);
 
         Robot robo = new Robot();
@@ -357,7 +357,7 @@ public class PublicationPage extends BasePage {
         elementVisibility(attachedFielsDownloafButton, driver).click();
         Thread.sleep(5000);
 
-        StringSelection stringSelection = new StringSelection("C:\\Users\\Avic\\Desktop\\для загрузки файлов в ceлениум\\New Text Document.txt");
+        StringSelection stringSelection = new StringSelection("C:\\TestNG\\test_parallel_running\\src\\main\\java\\utils\\docs_and_images\\New Text Document.txt");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSelection, null);
 
         Robot rob = new Robot();
@@ -379,7 +379,7 @@ public class PublicationPage extends BasePage {
         elementVisibility(attachedFielsDownloafButton, driver).click();
         Thread.sleep(5000);
 
-        StringSelection stringSel = new StringSelection("C:\\Users\\Avic\\Desktop\\для загрузки файлов в ceлениум\\New Text Document (2).txt");
+        StringSelection stringSel = new StringSelection("C:\\TestNG\\test_parallel_running\\src\\main\\java\\utils\\docs_and_images\\New Text Document (2).txt");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(stringSel, null);
 
         Robot ro = new Robot();
@@ -397,7 +397,10 @@ public class PublicationPage extends BasePage {
         elementVisibility(fifthUploadedFileIsDisplaed, driver);
 
         //select theme rubric button
+        Thread.sleep(5000);
         elementVisibility(selectThemeRzubricatorButton, driver).click();
+        Thread.sleep(5000);
+
         elementVisibility(selectRubricatorPlusButton, driver).click();
         elementVisibility(selectRubricatorDisplayed, driver);
         elementVisibility(selectRubricatorSave, driver).click();
@@ -411,6 +414,7 @@ public class PublicationPage extends BasePage {
 
         //select theme rubric button again
         elementVisibility(selectThemeRzubricatorButton, driver).click();
+        Thread.sleep(5000);
         elementVisibility(selectRubricatorPlusButton, driver).click();
         elementVisibility(selectRubricatorDisplayed, driver);
         elementVisibility(selectRubricatorSave, driver).click();
@@ -447,7 +451,7 @@ public class PublicationPage extends BasePage {
 
         //  check trash button for org level rubricator
         elementVisibility(materialsForGroupIsDisplayedDeleteButton, driver).click();
-        elementInvisibility(By.xpath("//tr/td[2][contains(text(),'Волго-Вятская МИ')]"), driver);
+        elementInvisibility(By.xpath("//tr/td[2][contains(text(),'МИ по Дальневосточному ФО')]"), driver);
 
         //create rubric level for ANALITIC ROLE
         elementVisibility(selectOrgObjects, driver).click();
@@ -469,7 +473,7 @@ public class PublicationPage extends BasePage {
         elementVisibility(attachedFielsDownloafButton, driver).click();
         Thread.sleep(5000);
 
-        StringSelection s1 = new StringSelection("C:\\Users\\Avic\\Desktop\\для селениума 2\\Text_Doc.txt");
+        StringSelection s1 = new StringSelection("C:\\TestNG\\test_parallel_running\\src\\main\\java\\utils\\docs_and_images\\1.png");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s1, null);
 
         Robot r1 = new Robot();
@@ -484,13 +488,13 @@ public class PublicationPage extends BasePage {
 
 
         // uploaded file is visible
-        // elementVisibility(firstuploadedFileIsDisplaed, driver);
+        elementVisibility(firstuploadedFileIsDisplaed, driver);
 
         //upload file#2
         elementVisibility(attachedFielsDownloafButton, driver).click();
         Thread.sleep(5000);
 
-        StringSelection s2 = new StringSelection("C:\\Users\\Avic\\Desktop\\для селениума 2\\List of used technologies.docx");
+        StringSelection s2 = new StringSelection("C:\\TestNG\\test_parallel_running\\src\\main\\java\\utils\\docs_and_images\\Flow Git.docx");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s2, null);
 
         Robot r2 = new Robot();
@@ -505,14 +509,14 @@ public class PublicationPage extends BasePage {
         Thread.sleep(2000);
 
         //uploaded file is visible
-        //  elementVisibility(secondUploadedFileIsDisplaed, driver);
+        elementVisibility(secondUploadedFileIsDisplaed, driver);
 
 
         //upload file#3
         elementVisibility(attachedFielsDownloafButton, driver).click();
         Thread.sleep(5000);
 
-        StringSelection s3 = new StringSelection("C:\\Users\\Avic\\Desktop\\для селениума 2\\kerio-control-gsg-en-9.1.4-1535.pdf");
+        StringSelection s3 = new StringSelection("C:\\TestNG\\test_parallel_running\\src\\main\\java\\utils\\docs_and_images\\Framework_Documentation.pdf");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s3, null);
 
         Robot r3 = new Robot();
@@ -526,14 +530,14 @@ public class PublicationPage extends BasePage {
         r3.keyRelease(KeyEvent.VK_ENTER);
         Thread.sleep(2000);
         //uploaded file is visible
-        //  elementVisibility(thirdUploadedFileIsDisplaed, driver);
+        elementVisibility(thirdUploadedFileIsDisplaed, driver);
 
 
         //upload file#4
         elementVisibility(attachedFielsDownloafButton, driver).click();
         Thread.sleep(5000);
 
-        StringSelection s4 = new StringSelection("C:\\Users\\Avic\\Desktop\\для селениума 2\\New Документ Microsoft Office Word.docx");
+        StringSelection s4 = new StringSelection("C:\\TestNG\\test_parallel_running\\src\\main\\java\\utils\\docs_and_images\\New Text Document.txt");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s4, null);
 
         Robot r4 = new Robot();
@@ -548,13 +552,13 @@ public class PublicationPage extends BasePage {
         Thread.sleep(2000);
 
         //uploaded file is visible
-        // elementVisibility(fourthUploadedFileIsDisplaed, driver);
+        elementVisibility(fourthUploadedFileIsDisplaed, driver);
 
         //upload file#5
         elementVisibility(attachedFielsDownloafButton, driver).click();
         Thread.sleep(5000);
 
-        StringSelection s5 = new StringSelection("C:\\Users\\Avic\\Desktop\\для селениума 2\\2017-04-24_18h06_58.png");
+        StringSelection s5 = new StringSelection("C:\\TestNG\\test_parallel_running\\src\\main\\java\\utils\\docs_and_images\\New Text Document (2).txt");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(s5, null);
 
         Robot r5 = new Robot();
@@ -569,25 +573,7 @@ public class PublicationPage extends BasePage {
         Thread.sleep(2000);
 
         //uploaded file is visible
-        //  elementVisibility(fifthUploadedFileIsDisplaed, driver);
-
-//        //select theme rubric button
-//        elementVisibility(selectThemeRzubricatorButton, driver).click();
-//        elementVisibility(selectRubricatorPlusButton, driver).click();
-//        elementVisibility(selectRubricatorDisplayed, driver).click();
-//        elementVisibility(selectRubricatorSave, driver).click();
-//        elementVisibility(selectRubricatorDispalyed, driver);
-//
-//        elementVisibility(trashHolderOFselectRubricatorDispalyed, driver).click();
-//        //select theme rubric button again
-//        elementVisibility(selectThemeRzubricatorButton, driver).click();
-//        elementVisibility(selectRubricatorPlusButton, driver).click();
-//        elementVisibility(selectRubricatorDisplayed, driver).click();
-//        elementVisibility(selectRubricatorSave, driver).click();
-//        elementVisibility(selectRubricatorDispalyed, driver);
-//
-//        elementVisibility(savePublicationButton, driver).click();
-//        Thread.sleep(2000);
+        elementVisibility(fifthUploadedFileIsDisplaed, driver);
 
         //select theme rubric button
         elementVisibility(selectThemeRzubricatorButton, driver).click();
@@ -604,7 +590,7 @@ public class PublicationPage extends BasePage {
 
         //select theme rubric button again
         elementVisibility(selectThemeRzubricatorButton, driver).click();
-        Thread.sleep(1000);
+        Thread.sleep(5000);
         elementVisibility(selectRubricatorPlusButton, driver).click();
         elementVisibility(selectRubricatorDisplayed, driver);
         elementVisibility(selectRubricatorSave, driver).click();

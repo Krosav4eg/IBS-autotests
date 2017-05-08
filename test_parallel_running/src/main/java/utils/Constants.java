@@ -55,8 +55,8 @@ public class Constants {
     //========================
     public static final String TU_BANK_OF_RUSSIA_TAB = "//a[contains(text(),'ТУ Банка России')]";
     public static final String VOLGO_VIATSKA_MI = "(//tr/td[3]/button[@class='fpspm-button'])[1]";
-    public static final String MI_DISPLAYED_IN_TABLE = "//tr/td[3][contains(text(),'Волго-Вятская МИ')]";
-    public static final String VOLGO_VIATSKA_MI_DISPLAYED_IN_TABLE = "//tr/td[2][contains(text(),'Волго-Вятская МИ')]";
+    public static final String MI_DISPLAYED_IN_TABLE = "//tr/td[3][contains(text(),'МИ по Дальневосточному ФО')]";
+    public static final String VOLGO_VIATSKA_MI_DISPLAYED_IN_TABLE = "//tr/td[2][contains(text(),'МИ по Дальневосточному ФО')]";
     //========================
     public static final String MI_DISPLAYED_CHECKBOX_IN_TABLE = "//tr/td[2][contains(text(),'Материалы для ГУП')]";
     //========================
@@ -72,7 +72,7 @@ public class Constants {
     //========================
     public static final String ATTACHED_FIELS_TAB = "(//fieldset[@class='fpspm-fieldset']/legend)[5]";
     public static final String ATTACHED_FIELS_DOWNLOAD_BUTTON = "//button[@name='uploadFilesBtn']";
-    public static final String FIRST_UPLOADED_FILE_IS_DISPLAYING = "//input[@value='2017.png']";
+    public static final String FIRST_UPLOADED_FILE_IS_DISPLAYING = "//input[@value='1.png']";
     public static final String SECOND_UPLOADED_FILE_IS_DISPLAYING = "//input[@value='Flow Git.docx']";
     public static final String THIRD_UPLOADED_FILE_IS_DISPLAYING = "//input[@value='Framework_Documentation.pdf']";
     public static final String FOURTH_UPLOADED_FILE_IS_DISPLAYING = "//input[@value='New Text Document.txt']";
@@ -173,7 +173,7 @@ public class Constants {
     public static final String SELECTED_RUBRIC_CHECKBOX1 = "//input[@name='checked']";
 
     public static final String DELETE_SELECTED_RUBRIC_BUTTON = "//span[contains(text(),'Удалить')]";
-    public static final String NO_RECORDS_FOUND_MESSAGE = "//tr/td[contains(text(),'No records found')]";
+    public static final String NO_RECORDS_FOUND_MESSAGE = "//table//td[contains(text(),'No records found')]";
     public static final String SAVE_RUBRIC_BUTTON = "(//span[contains(text(),'Сохранить')])[4]";
 
     //========================MANAGEMENT OF ACCESS RIGHTS ROLE DROPDOWN FILTERS=============================================
